@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.fa-play-circle {
+	margin-left: 300px;
+	margin-right: 0px;
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+	padding: 6px 8px;
+	background-color: #333333;
+}
+
+ul .navbar-nav {
+	margin-left: -300px;
+}
+
+#btnDownload {
+	font-size: 12px;
+	margin-left: 125px;
+	background-color: #333333;
+}
+
+.navbar-nav .nav-item {
+	border-left: dotted white 1px;
+}
+
+#subsection2-1 {
+	padding-top: 40vh;
+	padding-bottom: 30vh;
+}
+
+#subsection2-2 {
+	padding-top: 28vh;
+	padding-bottom: 20vh;
+}
+
+#subsection3-1, #subsection3-2 {
+	/*padding-left: 10vh;*/
+}
+
+#subsection-4 {
+	padding: 20vh 30vh 0vh 30vh;
+}
+
+#solution {
+	margin: 30vh 50vh 0vh 40vh;
+	/*margin-left: 20vh;
+	margin-right: 20vh;*/
+}
+
+ul .nav li {
+	font-size: 20px;
+}
+
+/*#image-section-1 {
+	height: 100vh;
+	background-image: url(assets/images/in-paradise-whitehaven-beach-in-the-whitsundays_2.jpeg);
+}*/
+
+/*.classname img {
+	background:url(‘../foldername/filename.jpg’) 0px 0px no-repeat;
+	background-size:contain/cover;
+}*/
+
+/*.container-fluid {
+
+}*/
+
+h3 {
+	margin-left: 75px;
+}
+
+#section-1 img {
+	height: 100vh;
+	width: 100%;
+	/*padding: 0px;*/
+
+	/*background-color: blue;*/
+	/*background: url("whitsunday-island.jpg");*/
+	/*background-size:contain/cover;*/
+	/*background-image: url("/assets/images/whitsunday-island.jpg");*/
+	/*background-image: url("whitsunday-island.jpg");*/
+	/*background-repeat: no-repeat, repeat;*/
+	/*background: url('assets/images/whitsunday-island.jpg');*/
+	/*background: url('img/someimage.jpg');*/
+
+	/*background-image: url('assets/images/whitsunday-island.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*padding-right: -15px;
+	padding-left: -15px;*/
+
+	/*background: url('assets/images/whitsunday-island.jpg') cover no-repeat;*/
+	/*background: url('assets/images/whitsunday-island.jpg') no-repeat;*/
+}
+
+#section-1 {
+	/*background-color: blue;
+	height: 100vh;*/
+	/*width: 100vw;*/
+}
+
+#section-2 {
+	background: #1A2980;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	/*background: #314755;*/  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to top, #26a0da, #314755);*/  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to top, #26a0da, #314755);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	/*background-color: #00578a;*/
+	height: 100vh;
+	/*width: 100vw;*/
+}
+
+#section-3 {
+	background-color: #19527F;
+	height: 100vh;
+	/*width: 100vw;*/
+}
+
+#section-4 {
+	background-color: #004b76;
+	height: 100vh;
+	/*width: 100vw;*/
+}
