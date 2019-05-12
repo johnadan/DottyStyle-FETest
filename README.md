@@ -1,2 +1,2 @@
-# DottyStyle-FETest
-Front-End Exam
+# Dotty Style Creative
+Web Developer Exam
