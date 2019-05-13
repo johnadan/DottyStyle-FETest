@@ -19,6 +19,10 @@ body {
 	background-color: #333333;
 }
 
+.navbar {
+	z-index: 1;
+}
+
 ul .navbar-nav {
 	margin-left: -300px;
 }
@@ -30,10 +34,24 @@ ul .navbar-nav {
 }
 
 .navbar-nav .nav-item {
-	border-left: dotted white 1px;
+	border-left: dotted gray 1px;
+	color: #f1f1f1;
+}
+
+/*.navbar-nav .nav-item a {
+	color: #f1f1f1;
+}*/
+
+.navbar-nav .nav-item a:hover, a:visited {
+	color: #0000ff;
+}
+
+#subsection1-1 {
+	z-index: -1;
 }
 
 #subsection2-1 {
+	padding-left: 5vh;
 	padding-top: 40vh;
 	padding-bottom: 30vh;
 }
@@ -48,21 +66,26 @@ ul .navbar-nav {
 }
 
 #subsection3-2 {
-	padding-left: 90px;
+	/*padding-left: 90px;*/
 }
 
-#subsection3-1, #subsection3-2 {
-	/*padding-left: 10vh;*/
+#subsection3-1 {
+	margin-top: 43px;
+}
+
+#subsection3-2 {
+	margin-top: 330px;
 }
 
 #subsection-4 {
-	padding: 20vh 30vh 0vh 30vh;
+	margin-top: 125px;
+	/*padding: 20vh 30vh 0vh 30vh;*/
 }
 
 #solution {
-	margin: 30vh 50vh 0vh 40vh;
-	/*margin-left: 20vh;
-	margin-right: 20vh;*/
+	/*margin: 30vh 50vh 0vh 40vh;*/
+	margin: 250px 0px 5px 485px;
+	/*margin-right: 20vh;*/
 }
 
 ul .nav li {
@@ -87,10 +110,23 @@ h3 {
 	margin-left: 75px;
 }
 
+/*#section-1 img:hover {
+	animation-name: zoom
+	
+}*/
+
 #section-1 img {
 	height: 100vh;
-	width: 100%;
-	/*padding: 0px;*/
+	position: relative;
+	width: auto;
+	max-width: 100% ;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 0;
 
 	/*background-color: blue;*/
 	/*background: url("whitsunday-island.jpg");*/
@@ -102,8 +138,7 @@ h3 {
 	/*background: url('img/someimage.jpg');*/
 
 	/*background-image: url('assets/images/whitsunday-island.jpg');*/
-	background-size: cover;
-	background-repeat: no-repeat;
+	/*background-size: cover;*/
 	/*padding-right: -15px;
 	padding-left: -15px;*/
 
@@ -112,6 +147,14 @@ h3 {
 }
 
 #section-1 {
+	padding: 0px 0px 0px 0px;
+	/*background: url(assets/images/whitsundays-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+	width: auto;
+	max-width: 100% ;*/
 	/*background-color: blue;
 	height: 100vh;*/
 	/*width: 100vw;*/
@@ -152,33 +195,55 @@ h3 {
 	color: white;
 }
 
-/*sidenav*/
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 130px;
   position: fixed;
-  z-index: 1;
   top: 0;
-  left: 0;
-  background: transparent;
+  right: 0;
+  /*background: transparent;*/
   overflow-x: hidden;
-  margin-top: 40px;
+  padding-top: 20vh;
+  z-index: 2;
 }
 
 .sidenav a {
   padding: 50px 8px 50px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  /*color: #818181;*/
   display: block;
 }
 
-.sidenav a:hover {
+.sidenav a {
   color: #f1f1f1;
+}
+
+.sidenav a:hover, a:visited {
+  color: #0000ff;
 }
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+}
+
+#bottomNav a {
+	/*border:1px solid #ccc;
+    border-width:1px 0;*/
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#bottomNav li {
+	display:inline;
+}
+
+#bottomNav a {
+	display:inline-block;
+    padding: 20px;
 }
