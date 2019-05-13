@@ -21,11 +21,9 @@
     <!-- Required Javascript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
@@ -63,8 +61,6 @@
     </div>
 
     <div id="section-1" class="container-fluid">
-    <!-- <div id="section-1" class="image-container"> -->
-        <!-- <img src="assets/images/whitsundays-4.png"> -->
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-5 col-md-5">
@@ -74,7 +70,16 @@
                     <h4 class="ml-2">A MOVIE THAT'S WAITING TO BE WRITTEN</h4>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5"></div>
+            <div class="col-lg-5 col-md-5">
+                <div class="container" id="subsection1-2">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6"></div>
+            <div class="col-lg-6 col-md-6">
+                <a href="#myModal" data-toggle="modal"><i class="far fa-play-circle fa-7x" data-target="#myModal"></i></a>
+            </div>
         </div>
     </div>
 
@@ -176,7 +181,6 @@
                     </p>                        
                 </div>
             </div>
-            <!-- <div class="col-lg-1 col-md-1"></div> -->
         </div>
     </div>
 
@@ -187,24 +191,23 @@
                 <div class="container" id="subsection-4">
                     <ul class="nav justify-content-center text-white" id="bottomNav">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Video </a>
+                        <a class="nav-link" href="#videoModal" data-target="#videoModal" data-toggle="modal">Video </a>
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Photography </a>
+                        <a class="nav-link" href="#imgModal" data-target="#imgModal" data-toggle="modal">Photography </a>
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Social </a>
+                        <a class="nav-link" href="#socialModal" data-target="#socialModal" data-toggle="modal">Social </a>
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">PR </a>
+                        <a class="nav-link" href="#modalPR" data-target="#modalPR" data-toggle="modal">PR </a>
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Radio </a>
+                        <a class="nav-link" href="#modalRadio" data-target="#modalRadio" data-toggle="modal">Radio </a>
                       </li>
                     </ul>
                 </div>
             </div>
-            <!-- <div class="col-lg-5 col-md-5"></div> -->
         </div>
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
@@ -230,8 +233,163 @@
         </div>
     </div>
 
-    <script>
+    <!-- Modal for section 1 -->
+    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark">The Whitsundays</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="modalVideo" width="100%" height="350" src="https://www.youtube.com/embed/dhKEFcnU508" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for section 4 video -->
+    <div id="videoModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark">Video</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Videomodal" width="100%" height="350" src="https://www.youtube.com/embed/JZKRq_qafKI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for section 4 image -->
+    <div class="modal fade bd-example-modal-lg" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-dark">Photography</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="photoModal" class="img-responsive" width="100%" height="350" src="https://www.travellers-autobarn.com.au/blog/wp-content/uploads/2013/10/017-Whitsundays4.jpg" alt="image" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- modal for section 4 social -->
+      <div class="modal fade bd-example-modal-lg" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-dark">Social</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-dark">
+                This is the modal for Social
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- modal for section 4 PR -->
+      <div class="modal fade bd-example-modal-lg" id="modalPR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-dark">PR</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-dark">
+                This is the modal for PR
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- modal for section 4 Radio -->
+      <div class="modal fade bd-example-modal-lg" id="modalRadio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-dark">Radio</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-dark">
+                This is the modal for Radio
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    <script type="text/javascript">
+        // section 1 modal
+        $(document).ready(function(){
+        /* Get iframe src attribute value i.e. YouTube video url
+        then store it in a variable */
+        var url = $("#modalVideo").attr('src');
         
+        /* Assign empty url value to the iframe src attribute when
+        modal hides, which stops the video playing */
+        $("#myModal").on('hide.bs.modal', function(){
+            $("#modalVideo").attr('src', '');
+        });
+        
+        /* Assign the initially stored url back to the iframe src
+        attribute when modal is displayed again */
+        $("#myModal").on('show.bs.modal', function(){
+            $("#modalVideo").attr('src', url);
+            });
+        });
+
+        // section 4 video modal
+        $(document).ready(function(){
+    
+        var url = $("#Videomodal").attr('src');
+        
+        $("#videoModal").on('hide.bs.modal', function(){
+            $("#Videomodal").attr('src', '');
+        });
+        
+        $("#videoModal").on('show.bs.modal', function(){
+            $("#Videomodal").attr('src', url);
+            });
+        });
+
+        // section 4 image modal
+        $(document).ready(function(){
+    
+        var url = $("#photoModal").attr('src');
+        
+        $("#imgModal").on('hide.bs.modal', function(){
+            $("#photoModal").attr('src', '');
+        });
+        
+        $("#videoModal").on('show.bs.modal', function(){
+            $("#photoModal").attr('src', url);
+            });
+        });
+
+
     </script>
 
 </body>
