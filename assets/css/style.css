@@ -119,7 +119,18 @@ h3 {
 	background: rgba(0, 0, 0, .6);
 } */
 
-#section-1 img {
+#section-1 {
+	background-image: url(../images/whitsundays-4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	width: auto;
+	max-width: 100%;
+	height: 100vh;
+	z-index: 0;
+}
+
+/*#section-1 img {
 	height: 100vh;
 	position: relative;
 	width: auto;
@@ -130,7 +141,7 @@ h3 {
     background-size: cover; 
     background-size: 100% 100%;
 	background-repeat: no-repeat;
-	z-index: 0;
+	z-index: 0;*/
 
 	/*background-color: blue;*/
 	/*background: url("whitsunday-island.jpg");*/
@@ -148,7 +159,7 @@ h3 {
 
 	/*background: url('assets/images/whitsunday-island.jpg') cover no-repeat;*/
 	/*background: url('assets/images/whitsunday-island.jpg') no-repeat;*/
-}
+/*}*/
 
 #section-1 {
 	padding: 0px 0px 0px 0px;
